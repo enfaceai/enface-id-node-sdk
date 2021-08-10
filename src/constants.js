@@ -1,0 +1,15 @@
+export const COMMAND_CHECK = 'check';
+export const COMMAND_READY = 'ready';
+export const COMMAND_AUTH = 'auth';
+export const COMMAND_AUTH_RESULT = 'auth_result';
+export const COMMAND_AUTH_INIT = 'auth_init';
+export const COMMAND_ACTIVATED = 'activated';
+export const COMMAND_AUTH_DECLINED = 'declined';
+export const COMMAND_CONNECTION_FAILED = 'connection_failed';
+export const COMMAND_CURRENT_USER_TOKEN = 'current_user_token';
+export const COMMAND_ERROR = 'error';
+export const COMMAND_HELLO = 'hello';
+export const AES_CIPHER = 'aes-256-cbc';
+export const COMMAND_CHALLENGE = 'challenge';
+export const SOCKET_PING_TIMEOUT = 30000;
+export const AUTHORIZATION_TIME_FRAME = 10 * 60 * 1000;
