@@ -1,4 +1,4 @@
-import { v1 as uuid, validate } from 'uuid';
+createChallengeimport { v1 as uuid, validate } from 'uuid';
 import WebSocket from 'ws';
 import https from 'https';
 import {

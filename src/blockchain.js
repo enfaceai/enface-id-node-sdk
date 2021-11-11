@@ -34,8 +34,12 @@ export const sha256blockchain = async value => {
 
 export const getRecordsHashed = async (alias, names) => {
   const aliasHash = await sha256blockchain(alias);
+  console.log('[getRecordsHashed]', { aliasHash });
   names = await Promise.all(names.map(x => { return sha256blockchain(x); }));
-  return contract.getRecordHashed(aliasHash, names);
+  console.log('[getRecordsHashed]', { names });
+  const result = await contract.getRecordHashed(aliasHash, names);
+  console.log('[getRecordsHashed]', { result, json: JSON.stringify(result, null, ' ') });
+  return result;
 };
 
 export const getUserPublicKeys = async alias => {
